@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <%- include("navbar") %>
+        <form action="/user/signup" method="post">
+            <label for="username">USER NAME :</label>
+            <input type="text" name="username" placeholder="Username" required>
+            <label for="email">EMAIL :</label>
+            <input type="email" name="email" placeholder="Email" required>
+            <label for="password">PASSWORD :</label>
+            <input type="text" name="password" placeholder="Password" id="password" required>
+            <select name="role">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <input type="submit" value="Signup">
+        </form>
+</body>
+
+</html>
